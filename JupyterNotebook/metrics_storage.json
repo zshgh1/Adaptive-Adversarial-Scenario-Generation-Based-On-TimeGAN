@@ -1,0 +1,94 @@
+{
+    "CACC": {
+        "m_test_veldiffsumlist": {
+            "max": 35.356030151294284,
+            "min": 15.77091096352638,
+            "avg": 24.412252514795924,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_test_dissumlist": {
+            "max": 152.43487356336468,
+            "min": 59.392171467192576,
+            "avg": 98.02398124741318,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_energy": {
+            "max": 0.5035967922162164,
+            "min": 0.022209246577954065,
+            "avg": 0.18914109164146145,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        }
+    },
+    "PID": {
+        "m_test_veldiffsumlist": {
+            "max": 113.12665138347384,
+            "min": 47.82192739485442,
+            "avg": 77.68242023609137,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_test_dissumlist": {
+            "max": 657.0756721843431,
+            "min": 175.9070629607113,
+            "avg": 342.2770086950108,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_energy": {
+            "max": 0.5389847756333804,
+            "min": 0.022977851088658435,
+            "avg": 0.20906911007706297,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        }
+    },
+    "IDM": {
+        "m_test_veldiffsumlist": {
+            "max": 87.38223035536886,
+            "min": 37.07896339211494,
+            "avg": 60.34502967269526,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_test_dissumlist": {
+            "max": 66.43904068509595,
+            "min": 20.756497641713704,
+            "avg": 42.45616146777586,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_energy": {
+            "max": 0.5058217716782738,
+            "min": 0.01717689024250208,
+            "avg": 0.18941273704719463,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        }
+    },
+    "LCM": {
+        "m_test_veldiffsumlist": {
+            "max": 108.10767702495181,
+            "min": 44.19614494373259,
+            "avg": 73.29114798630138,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_test_dissumlist": {
+            "max": 137.21728029738736,
+            "min": 42.412902879162544,
+            "avg": 86.41002306047274,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        },
+        "m_energy": {
+            "max": 0.505433005326218,
+            "min": 0.018759355825442484,
+            "avg": 0.1915107261893934,
+            "trimmed_count": 1279,
+            "original_count": 1419
+        }
+    }
+}

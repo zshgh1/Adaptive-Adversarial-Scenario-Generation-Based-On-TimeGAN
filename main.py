@@ -382,7 +382,7 @@ if __name__ == "__main__":
     # "speed_front_error=-0.1,acc_front_min=-8.0,acc_self_min=-8.0,time_perception=0.3,time_communicate=0.2,"
     # "time_wait_per=0.05,time_wait_com=0.05,period=0.1",
     #CONTROLLERS = ["LCM", "CACC", "IDM", "PID", "PID_safe", "OVM", "GM4"]
-    CONTROLLERS = ["PID_safe"]
+    CONTROLLERS = ["IDM"]
     # Experiment Arguments
     parser.add_argument(
         '--device',
@@ -455,7 +455,8 @@ if __name__ == "__main__":
         default=1e-4,
         type=float)
     parser.add_argument(
-        '--mode_params',default=mode_params,
+        '--mode_params',
+        default=mode_params,
         type=dict)
     parser.add_argument(
         '--scaling',

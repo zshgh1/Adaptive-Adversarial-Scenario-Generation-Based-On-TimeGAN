@@ -1,32 +1,32 @@
 {
-    "PID_safe": {
+    "IDM": {
         "m_test_veldiffsumlist": {
-            "max": 35.57177879830427,
-            "min": 15.809977666099003,
-            "avg": 24.942431395981703,
-            "trimmed_count": 1135,
-            "original_count": 1261
+            "max": 55.75865326806778,
+            "min": 24.707680863134176,
+            "avg": 38.28929991745204,
+            "trimmed_count": 1949,
+            "original_count": 2165
         },
         "m_test_dissumlist": {
-            "max": 498.3333631630085,
-            "min": 85.9249035695633,
-            "avg": 215.36901010293934,
-            "trimmed_count": 1135,
-            "original_count": 1261
+            "max": 60.94711871521324,
+            "min": 30.43412594122285,
+            "avg": 44.36939623695817,
+            "trimmed_count": 1949,
+            "original_count": 2165
         },
         "m_energy": {
-            "max": 0.5056392818478682,
-            "min": 0.024931240705537296,
-            "avg": 0.1924072176561176,
-            "trimmed_count": 1135,
-            "original_count": 1261
+            "max": 0.10629920807981859,
+            "min": 0.01225111109435502,
+            "avg": 0.05380979415783323,
+            "trimmed_count": 1949,
+            "original_count": 2165
         },
         "m_ttclist": {
-            "max": 11.598381498646264,
-            "min": 2.2617890888681367,
-            "avg": 5.910235537412557,
-            "trimmed_count": 1135,
-            "original_count": 1261
+            "max": 2.871138178485881,
+            "min": 0.3925012668203547,
+            "avg": 1.4571430874936844,
+            "trimmed_count": 1949,
+            "original_count": 2165
         }
     }
 }

@@ -71,7 +71,6 @@ def data_preprocess(
         ori_data = ori_data.drop(["Unnamed: 0"], axis=1)
     if ori_data.columns[0] == "Vehicle_ID":
         index="Vehicle_ID"
-
         ori_data = split_trajectories(ori_data, max_seq_len)
 
     #########################
@@ -148,6 +147,8 @@ def data_preprocess(
 
     return output, time, params, max_seq_len, padding_value
 import pandas as pd
+
+
 def split_trajectories(df, max_size):
     # 按车辆ID分组
     grouped = df.groupby('Vehicle_ID')
@@ -157,17 +158,32 @@ def split_trajectories(df, max_size):
     for veh_id, group in grouped:
         # 获取轨迹长度
         traj_len = len(group)
-        # 计算分割块数
-        num_chunks = traj_len // max_size
+
+        # --- 核心修改点 ---
+        # 如果轨迹长度大于max_size，则计算需要拆分的块数
+        # 否则，至少保留一个块
+        if traj_len > max_size:
+            num_chunks = traj_len // max_size
+        else:
+            num_chunks = 1
+        # --- 修改结束 ---
 
         # 生成每个子轨迹
         for i in range(num_chunks):
             start = i * max_size
-            end = start + max_size
+            # 对于最后一个块，如果不足max_size，则取到末尾
+            end = start + max_size if i < num_chunks - 1 else traj_len
+
             chunk = group.iloc[start:end].copy()
             chunk['Chunk_ID'] = chunk_counter  # 分配整数 Chunk_ID
             chunk_counter += 1  # 计数器递增
             split_data.append(chunk)
+
+    # 检查是否有数据可拼接
+    if not split_data:
+        # 如果没有数据，可以选择返回一个空的DataFrame或者抛出更明确的错误
+        # 这里选择返回空DataFrame，让调用者决定如何处理
+        return pd.DataFrame()
 
     split_df = pd.concat(split_data, ignore_index=True)
     # 用 Chunk_ID 替换 Vehicle_ID

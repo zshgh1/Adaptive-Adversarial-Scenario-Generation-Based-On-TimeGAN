@@ -119,6 +119,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
+/forecast/result
+/forecast/results
 
 # mypy
 .mypy_cache/
@@ -130,4 +132,6 @@ dmypy.json
 output/
 tensorboard/
 *.csv
-*.csv
+*.pt
+*.png
+*.log
